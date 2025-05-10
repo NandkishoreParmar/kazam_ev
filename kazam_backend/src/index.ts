@@ -18,10 +18,10 @@ const redis = new Redis({
 
 const mongoUrl = 'mongodb://localhost:27017/assignment';
 const client = new MongoClient(mongoUrl);
-const corsOptions = {
-    origin: 'https://notes-app1234556.netlify.app/', // Allow only requests from this origin
-     // Allow only these headers
-};
+// const corsOptions = {
+//     origin: 'https://notes-app1234556.netlify.app/', // Allow only requests from this origin
+//      // Allow only these headers
+// };
 
 // Use CORS middleware with specified options
 let db;
@@ -35,7 +35,7 @@ async function connectMongo() {
 connectMongo().catch(console.error);
 
 
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 
 const REDIS_KEY = 'FULLSTACK_TASK_NANDKISHORE';
