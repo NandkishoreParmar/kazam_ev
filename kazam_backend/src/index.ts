@@ -16,7 +16,9 @@ const redis = new Redis({
   password: 'dssYpBnYQrl01GbCGVhVq2e4dYvUrKJB',
 });
 
-const mongoUrl = 'mongodb://localhost:27017/assignment';
+// const mongoUrl = 'mongodb://localhost:27017/assignment';
+// const mongoUrl='mongodb+srv://assignment_user:HCgEj5zv8Hxwa4xO@testcluster.6f94f5o.mongodb.net/assignment'
+const mongoUrl = "mongodb+srv://nandkishoreparmar97:vbbr8aSBmNDsTJ7S@cluster0.6jsrswx.mongodb.net/"
 const client = new MongoClient(mongoUrl);
 // const corsOptions = {
 //     origin: 'https://notes-app1234556.netlify.app/', // Allow only requests from this origin
